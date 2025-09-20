@@ -20,7 +20,7 @@ public class WikiApiApplication {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedOrigins("http://localhost:8000", "http://127.0.0.1:8000","http://localhost:5500", "http://127.0.0.1:5500" ) // Permita o domínio do seu frontend
+                    .allowedOrigins("http://localhost:8000", "http://127.0.0.1:8000","http://localhost:5500", "http://127.0.0.1:5500", "https://pimenteljoao44.github.io/wiki-page/" ) // Permita o domínio do seu frontend
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
