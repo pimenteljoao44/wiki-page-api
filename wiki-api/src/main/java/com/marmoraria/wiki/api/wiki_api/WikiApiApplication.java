@@ -30,7 +30,7 @@ public class WikiApiApplication {
             public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
                 registry.addResourceHandler("/uploads/**")
-                        .addResourceLocations("file:C:/wiki-uploads/");
+                        .addResourceLocations("file:/var/www/wiki-uploads/");
             }
         };
     }

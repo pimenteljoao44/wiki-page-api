@@ -18,7 +18,7 @@ import java.util.UUID;
 @RequestMapping("/api/images")
 public class ImageController {
 
-    private final String uploadDir = "C:/wiki-uploads/";
+    private final String uploadDir = "/var/www/wiki-uploads/";
 
     @PostMapping("/upload")
     public ResponseEntity<String> uploadImage(@RequestParam("image") MultipartFile file) {
